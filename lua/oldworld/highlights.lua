@@ -348,7 +348,7 @@ M.highlights = {
     TelescopeResultsTitle = { fg = p.bg, bg = p.bg },
     TelescopePromptTitle = { fg = p.black, bg = p.red, bold = true },
     TelescopePromptBorder = { fg = p.gray01, bg = p.gray01 },
-    TelescopePromptNormal = { fg = p.gray06, bg = p.gray01 },
+    TelescopePromptNormal = { fg = p.fg, bg = p.gray01 },
     TelescopePromptCounter = { fg = p.gray04, bg = p.gray01 },
     TelescopeMatching = { fg = p.yellow, underline = true },
 
@@ -375,7 +375,7 @@ M.highlights = {
 
     -- Flash
     FlashLabel = { fg = p.green, bg = p.bg, bold = true },
-    FlashBackdrop = { fg = p.gray03 },
+    FlashBackdrop = { fg = p.gray05 },
     FlashMatch = { fg = p.purple, bg = p.bg },
     FlashCurrent = { fg = p.cyan, bg = p.bg },
 }
