@@ -384,11 +384,11 @@ M.highlights = {
     -- Lazy
     LazyDimmed = { fg = p.subtext1 },
 
-    -- -- Noice
-    -- NoiceCmdlinePopup = { bg = p.bg_dark },
-    -- NoiceCmdlinePopupBorder = { fg = p.gray4 },
-    -- NoiceCmdlinePopupTitle = { fg = p.blue },
-    -- NoiceCmdlineIcon = { fg = p.blue },
+    -- Noice
+    NoiceCmdlinePopup = { bg = p.bg_dark },
+    NoiceCmdlinePopupBorder = { fg = p.gray4 },
+    NoiceCmdlinePopupTitle = { fg = p.blue },
+    NoiceCmdlineIcon = { fg = p.blue },
 }
 
 function M.setup()
