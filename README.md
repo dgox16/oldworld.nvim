@@ -1,8 +1,6 @@
-<p align="center">
-  <h1 align="center">OldWorld.nvim</h1>
-</p>
+# OldWorld.nvim
 
-After a long time using themes with saturated colors, I've decided to give my eyes a more relaxing view. OldWorld is a theme heavily based on [mellow.nvim](https://github.com/mellow-theme/mellow.nvim) but adding new colors and new integrations with different plugins.
+After a long time using themes with bright and saturated colors, I've decided to give my eyes a more relaxing view. OldWorld is a theme heavily based on [mellow.nvim](https://github.com/mellow-theme/mellow.nvim) but adding new colors and new integrations with different plugins.
 
 Why not simply fork it? I've thought about it carefully, but my idea with the theme is to add new colors, changing some of the existing ones, which would eventually result in a different theme.
 
@@ -67,4 +65,4 @@ It's my first theme and my first Neovim plugin. I know in advance that there wil
 
 ## 🎙️ Acknowledgements
 
--   [mellow.nvim](https://github.com/mellow-theme/mellow.nvim) used its amazing color palette as a base.
+-   [mellow.nvim](https://github.com/mellow-theme/mellow.nvim) used its amazing color palette and styles as a base.

@@ -104,6 +104,7 @@ M.highlights = {
     TabLineSel = { fg = p.white }, -- tab pages line, active tab page label
     Terminal = { fg = p.fg, bg = p.black }, -- terminal window (see terminal-size-color)
     Title = { fg = p.green }, -- titles for output from " =set all", ":autocmd" etc.
+    Italic = { fg = p.blue, italic = true },
     Visual = { bg = p.gray02 }, -- Visual mode selection
     VisualNOS = { bg = p.gray02 }, -- Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
     WarningMsg = { fg = p.yellow }, -- warning messages
@@ -229,14 +230,14 @@ M.highlights = {
 
     -- Diagnostics
     DiagnosticOk = { fg = p.green },
-    DiagnosticError = { fg = p.orange },
+    DiagnosticError = { fg = p.red },
     DiagnosticWarn = { fg = p.yellow },
     DiagnosticInfo = { fg = p.purple },
-    DiagnosticHint = { fg = p.red },
-    DiagnosticUnderlineError = { fg = p.orange, underline = true },
+    DiagnosticHint = { fg = p.cyan },
+    DiagnosticUnderlineError = { fg = p.red, underline = true },
     DiagnosticUnderlineWarn = { fg = p.yellow, underline = true },
     DiagnosticUnderlineInfo = { fg = p.purple, underline = true },
-    DiagnosticUnderlineHint = { fg = p.red, underline = true },
+    DiagnosticUnderlineHint = { fg = p.cyan, underline = true },
 
     -- Neovim's built-in language server client
     LspReferenceWrite = { fg = p.purple, underline = true },
@@ -247,7 +248,7 @@ M.highlights = {
     -- GitSigns
     GitSignsAdd = { fg = p.green },
     GitSignsChange = { fg = p.yellow },
-    GitSignsDelete = { fg = p.orange },
+    GitSignsDelete = { fg = p.red },
 
     -- Diff
     diffAdded = { fg = p.bright_green },
@@ -374,10 +375,13 @@ M.highlights = {
     MasonHighlightSecondary = { fg = p.blue },
 
     -- Flash
-    FlashLabel = { fg = p.green, bg = p.bg, bold = true },
+    FlashLabel = { fg = p.bright_green, bg = p.bg, bold = true },
     FlashBackdrop = { fg = p.gray05 },
-    FlashMatch = { fg = p.purple, bg = p.bg },
-    FlashCurrent = { fg = p.cyan, bg = p.bg },
+    FlashMatch = { fg = p.bright_purple, bg = p.bg },
+    FlashCurrent = { fg = p.bright_cyan, bg = p.bg },
+
+    -- Lazy
+    LazyDimmed = { fg = p.gray06 },
 }
 
 function M.setup()
