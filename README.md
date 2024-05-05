@@ -39,22 +39,6 @@ The theme will use the default themes unless you change the default configuratio
 
 ```lua
 local default_config = {
-    terminal_colors = true,
-    styles = {
-        comments = { italic = true },
-        keywords = {},
-        identifiers = {},
-        functions = { italic = true },
-        variables = {},
-        booleans = {},
-    },
-}
-```
-
-If you want to change any setting, you will need to pass the configuration with the adjusted value to the setup function according to your needs.
-
-```lua
-require("oldworld").setup({
     terminal_colors = true, -- enable terminal colors
     styles = { -- You can pass the style using the format: style = true
         comments = { italic = true }, -- style for comments
@@ -62,7 +46,17 @@ require("oldworld").setup({
         identifiers = {}, -- style for identifiers
         functions = { italic = true }, -- style for functions
         variables = {}, -- style for variables
-        booleans = { bold = true }, -- style for booleans
+        booleans = {}, -- style for booleans
+    },
+}
+```
+
+To configure a setting, you should pass that setting with the changed value following the structure of the default configuration.
+
+```lua
+require("oldworld").setup({
+    styles = {
+        booleans = { italic = true, bold = true },
     },
 })
 ```
