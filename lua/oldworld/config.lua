@@ -13,12 +13,13 @@ local default_config = {
 }
 
 function config.setup(opts)
-    for k, v in pairs(opts or {}) do
-        if type(v) == "table" then
-            config[k] = {}
-            for kk, vv in pairs(v) do
-                config[k][kk] = vv
-            end
+    if opts == nil then
+        return
+    end
+
+    for k, v in pairs(opts) do
+        if type(v) == "table" and default_config[k] then
+            config[k] = vim.tbl_deep_extend("keep", default_config[k], v)
         else
             config[k] = v
         end
