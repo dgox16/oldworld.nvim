@@ -46,6 +46,25 @@ local default_config = {
         variables = {}, -- style for variables
         booleans = {}, -- style for booleans
     },
+    integrations = { -- You can disable/enable integrations
+        alpha = true,
+        cmp = true,
+        flash = true,
+        gitsigns = true,
+        hop = false,
+        indent_blankline = true,
+        lazy = true,
+        lsp = true,
+        markdown = true,
+        mason = true,
+        navic = false,
+        neo_tree = false,
+        noice = true,
+        notify = true,
+        rainbow_delimiters = true,
+        telescope = true,
+        treesitter = true,
+    },
 }
 ```
 
@@ -55,6 +74,10 @@ To configure a setting, you should pass that setting with the changed value foll
 require("oldworld").setup({
     styles = {
         booleans = { italic = true, bold = true },
+    },
+    integrations = {
+        hop = true,
+        telescope = false,
     },
 })
 ```
