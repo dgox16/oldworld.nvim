@@ -39,10 +39,10 @@ The theme will use the default themes unless you change the default configuratio
 local default_config = {
     terminal_colors = true, -- enable terminal colors
     styles = { -- You can pass the style using the format: style = true
-        comments = { italic = true }, -- style for comments
+        comments = {}, -- style for comments
         keywords = {}, -- style for keywords
         identifiers = {}, -- style for identifiers
-        functions = { italic = true }, -- style for functions
+        functions = {}, -- style for functions
         variables = {}, -- style for variables
         booleans = {}, -- style for booleans
     },

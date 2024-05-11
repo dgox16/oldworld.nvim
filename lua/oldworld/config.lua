@@ -3,10 +3,10 @@ local config = {}
 local default_config = {
     terminal_colors = true,
     styles = {
-        comments = { italic = true },
+        comments = {},
         keywords = {},
         identifiers = {},
-        functions = { italic = true },
+        functions = {},
         variables = {},
         booleans = {},
     },
@@ -41,8 +41,13 @@ function config.setup(opts)
             for integration, enabled in pairs(v) do
                 default_config.integrations[integration] = enabled
             end
-        elseif type(v) == "table" and default_config[k] then
-            config[k] = vim.tbl_deep_extend("keep", default_config[k], v)
+        elseif k == "styles" then
+            for style_key, style_value in pairs(v) do
+                if default_config.styles[style_key] ~= nil then
+                    config.styles[style_key] =
+                        vim.tbl_deep_extend("keep", default_config.styles[style_key], style_value)
+                end
+            end
         else
             config[k] = v
         end
