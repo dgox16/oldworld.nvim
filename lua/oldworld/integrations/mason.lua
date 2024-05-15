@@ -3,8 +3,19 @@ local p = require("oldworld.palette")
 return {
     MasonHeader = { fg = p.fg, bg = p.bg, bold = true },
     MasonHeaderSecondary = { fg = p.fg, bg = p.bg, bold = true },
+
     MasonHighlight = { fg = p.green },
-    MasonHighlightBlockBold = { bg = p.fg, fg = p.bg, bold = true },
-    MasonHighlightSecondary = { fg = p.blue },
-    MasonMuted = { fg = p.subtext4 },
+    MasonHighlightBlock = { bg = p.green, fg = p.bg, bold = true },
+    MasonHighlightBlockBold = { bg = p.blue, fg = p.bg, bold = true },
+
+    MasonHighlightSecondary = { fg = p.magenta },
+    MasonHighlightBlockSecondary = { fg = p.red, bg = p.blue },
+    MasonHighlightBlockBoldSecondary = { fg = p.bg, bg = p.fg, bold = true },
+
+    MasonMuted = { fg = p.subtext1 },
+    MasonMutedBlock = { bg = p.gray4, fg = p.subtext1, bold = true },
+    MasonMutedBlockBold = { bg = p.yellow, fg = p.bg, bold = true },
+
+    MasonError = { fg = p.red },
+    MasonHeading = { fg = p.magenta, bold = true },
 }
