@@ -97,8 +97,8 @@ return {
     Terminal = { fg = p.fg, bg = p.black }, -- terminal window (see terminal-size-color)
     Title = { fg = p.green }, -- titles for output from " =set all", ":autocmd" etc.
     Italic = { fg = p.blue, italic = true },
-    Visual = { bg = p.gray3 }, -- Visual mode selection
-    VisualNOS = { bg = p.gray3 }, -- Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
+    Visual = { bg = p.gray4 }, -- Visual mode selection
+    VisualNOS = { bg = p.gray4 }, -- Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
     WarningMsg = { fg = p.yellow }, -- warning messages
     WildMenu = { fg = p.black, bg = p.purple }, -- current match in 'wildmenu' completion
     Winbar = { fg = p.fg, bg = p.gray1 }, -- Winbar
