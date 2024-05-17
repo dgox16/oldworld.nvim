@@ -55,6 +55,7 @@ return {
     ["@markup.raw.delimiter"] = { fg = p.subtext4 },
     ["@markup.quote"] = { fg = p.subtext1 },
     ["@markup.strikethrough"] = { fg = p.gray4, strikethrough = true },
+    ["@markup.list.checked.markdown"] = { fg = p.green },
     -- Diagnostics
     DiagnosticOk = { fg = p.green },
     DiagnosticError = { fg = p.red },
