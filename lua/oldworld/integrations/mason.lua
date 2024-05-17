@@ -13,7 +13,7 @@ return {
     MasonHighlightBlockBoldSecondary = { fg = p.bg, bg = p.fg, bold = true },
 
     MasonMuted = { fg = p.subtext1 },
-    MasonMutedBlock = { bg = p.gray4, fg = p.subtext1, bold = true },
+    MasonMutedBlock = { bg = p.gray4, fg = p.subtext3, bold = true },
     MasonMutedBlockBold = { bg = p.yellow, fg = p.bg, bold = true },
 
     MasonError = { fg = p.red },
