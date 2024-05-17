@@ -19,7 +19,6 @@ With [lazy.nvim](https://github.com/folke/lazy.nvim):
     "dgox16/oldworld.nvim",
     lazy = false,
     priority = 1000,
-    config = true,
 }
 ```
 
@@ -33,7 +32,7 @@ vim.cmd.colorscheme("oldworld")
 
 ## ⚙️ Configuration
 
-The theme will use the default themes unless you change the default configuration shown below:
+The theme will use the default values unless you change the default configuration shown below:
 
 ```lua
 local default_config = {
