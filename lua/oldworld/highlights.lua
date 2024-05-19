@@ -17,6 +17,7 @@ local groups_highlights = {
     mason = require("oldworld.integrations.mason"),
     navic = require("oldworld.integrations.navic"),
     neo_tree = require("oldworld.integrations.neo_tree"),
+    neorg = require("oldworld.integrations.neorg"),
     noice = require("oldworld.integrations.noice"),
     notify = require("oldworld.integrations.notify"),
     rainbow_delimiters = require("oldworld.integrations.rainbow_delimiters"),

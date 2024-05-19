@@ -23,6 +23,7 @@ local default_config = {
         mason = true,
         navic = false,
         neo_tree = false,
+        neorg = false,
         noice = true,
         notify = true,
         rainbow_delimiters = true,
