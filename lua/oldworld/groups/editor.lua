@@ -1,50 +1,6 @@
 local p = require("oldworld.palette")
-local config = require("oldworld.config")
-
-local styles = vim.tbl_map(function(value)
-    return setmetatable(value, {
-        __add = function(a, b)
-            return vim.tbl_extend("force", a, b)
-        end,
-    })
-end, config.styles)
 
 return {
-    Comment = { fg = p.subtext4 } + styles.comments, -- any comment
-    Constant = { fg = p.red }, -- any constant
-    String = { fg = p.green }, -- a string constant: "this is a string"
-    Character = { fg = p.green }, -- a character constant: 'p', '\n'
-    Number = { fg = p.magenta }, -- a number constant: 234, 0xff
-    Boolean = { fg = p.yellow } + styles.booleans, -- a boolean constant: TRUE, false
-    Float = { fg = p.magenta }, -- a floating point constant: 2.3e10
-    Identifier = { fg = p.fg } + styles.identifiers, -- any variable name
-    Function = { fg = p.fg } + styles.functions, -- function name (also: methods for classes)
-    Statement = { fg = p.fg }, -- any statement
-    Conditional = { fg = p.blue }, -- if, then, else, endif, switch, etc.
-    Repeat = { fg = p.purple }, -- for, do, while, etc.
-    Label = { fg = p.purple }, -- case, default, etc.
-    Operator = { fg = p.yellow }, -- sizeof", "+", "*", etc.
-    Keyword = { fg = p.purple } + styles.keywords, -- any other keyword
-    Exception = { fg = p.purple }, -- try, catch, throw
-    PreProc = { fg = p.red }, -- generic Preprocessor
-    Include = { fg = p.purple }, -- preprocessor #include
-    Define = { fg = p.red }, -- preprocessor #define
-    Macro = { fg = p.red }, -- same as Define
-    PreCondit = { fg = p.red }, -- preprocessor #if, #else, #endif, etc.
-    Type = { fg = p.yellow }, -- int, long, char, etc.
-    StorageClass = { fg = p.yellow }, -- static, register, volatile, etc.
-    Structure = { fg = p.red }, -- struct, union, enum, etc.
-    Typedef = { fg = p.yellow }, -- A typedef
-    Special = { fg = p.blue }, -- any special symbol
-    SpecialChar = { fg = p.yellow }, -- special character in a constant
-    Tag = { fg = p.yellow }, -- you can use CTRL-] on this
-    SpecialComment = { fg = p.subtext4 }, -- special things inside a comment
-    Debug = { fg = p.yellow }, -- debugging statements
-    Underlined = { underline = true }, -- text that stands out, HTML links
-    Error = { fg = p.orange }, -- any erroneous construct
-    Todo = { fg = p.yellow }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
-    --
-    -- Highlighting Groups (descriptions and ordering from ` =h highlight-groups`) {{{
     ColorColumn = { bg = p.gray1 }, -- used for the columns set with 'colorcolumn'
     Conceal = { fg = p.gray1 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
     Cursor = { fg = p.black, bg = p.fg }, -- the character under the cursor
@@ -56,6 +12,7 @@ return {
     DiffChange = { fg = p.yellow, underline = true }, -- diff mode: Changed line
     DiffDelete = { bg = p.orange, fg = p.black }, -- diff mode: Deleted line
     DiffText = { bg = p.yellow, fg = p.black }, -- diff mode: Changed text within a changed line
+    EndOfBuffer = { fg = p.bg },
     ErrorMsg = { fg = p.orange }, -- error messages on the command line
     VertSplit = { fg = p.gray2 }, -- the column separating vertically split windows
     WinSeparator = { fg = p.gray2 }, -- the column separating vertically split windows
@@ -69,8 +26,7 @@ return {
     MatchParen = { fg = p.yellow, underline = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match.
     ModeMsg = { fg = p.gray3, bold = true }, --' showmode' message (e.g., "-- INSERT --")
     MoreMsg = { fg = p.bright_magenta }, -- more-prompt
-    NonText = { fg = p.gray4 }, --'~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., > displayed when a double-wide character doesn't fit at the end of the line).
-    EndOfBuffer = { fg = p.bg },
+    NonText = { fg = p.subtext4 }, --'~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., > displayed when a double-wide character doesn't fit at the end of the line).
     Normal = { fg = p.fg, bg = p.bg }, -- normal text
     NormalNC = { fg = p.fg, bg = p.bg_dark }, -- normal text
     NormalFloat = { fg = p.fg, bg = p.gray0 }, -- Normal text in floating windows.
@@ -103,22 +59,4 @@ return {
     WildMenu = { fg = p.black, bg = p.purple }, -- current match in 'wildmenu' completion
     Winbar = { fg = p.fg, bg = p.gray1 }, -- Winbar
     WinbarNC = { fg = p.subtext4, bg = p.bg_dark }, -- Winbar non-current windows.
-
-    -- HTML
-    htmlArg = { fg = p.bright_purple, italic = true }, -- attributes
-    htmlEndTag = { fg = p.subtext1 }, -- end tag />
-    htmlTitle = { fg = p.fg }, -- title tag text
-    htmlTag = { fg = p.subtext1 }, -- tag delimiters
-    htmlTagN = { fg = p.subtext1 },
-    htmlTagName = { fg = p.red }, -- tag text
-
-    -- Diff
-    diffAdded = { fg = p.bright_green },
-    diffRemoved = { fg = p.bright_orange },
-    diffChanged = { fg = p.bright_yellow },
-    diffOldFile = { fg = p.gray4 },
-    diffNewFile = { fg = p.fg },
-    diffFile = { fg = p.subtext4 },
-    diffLine = { fg = p.red },
-    diffIndexLine = { fg = p.magenta },
 }

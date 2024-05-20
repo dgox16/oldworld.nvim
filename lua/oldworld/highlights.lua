@@ -1,34 +1,35 @@
 local config = require("oldworld.config")
-local defaults_highlights = require("oldworld.integrations.NormalNvim")
+local editor_highlights = require("oldworld.groups.editor")
+local syntax_highlights = require("oldworld.groups.syntax")
 local terminal = require("oldworld.terminal")
 
 local M = {}
 
-local groups_highlights = {
-    alpha = require("oldworld.integrations.alpha"),
-    cmp = require("oldworld.integrations.cmp"),
-    flash = require("oldworld.integrations.flash"),
-    gitsigns = require("oldworld.integrations.gitsigns"),
-    hop = require("oldworld.integrations.hop"),
-    indent_blankline = require("oldworld.integrations.indent_blankline"),
-    lazy = require("oldworld.integrations.lazy"),
-    lsp = require("oldworld.integrations.lsp"),
-    markdown = require("oldworld.integrations.markdown"),
-    mason = require("oldworld.integrations.mason"),
-    navic = require("oldworld.integrations.navic"),
-    neo_tree = require("oldworld.integrations.neo_tree"),
-    neorg = require("oldworld.integrations.neorg"),
-    noice = require("oldworld.integrations.noice"),
-    notify = require("oldworld.integrations.notify"),
-    rainbow_delimiters = require("oldworld.integrations.rainbow_delimiters"),
-    telescope = require("oldworld.integrations.telescope"),
-    treesitter = require("oldworld.integrations.treesitter"),
+local integrations_highlights = {
+    alpha = require("oldworld.groups.integrations.alpha"),
+    cmp = require("oldworld.groups.integrations.cmp"),
+    flash = require("oldworld.groups.integrations.flash"),
+    gitsigns = require("oldworld.groups.integrations.gitsigns"),
+    hop = require("oldworld.groups.integrations.hop"),
+    indent_blankline = require("oldworld.groups.integrations.indent_blankline"),
+    lazy = require("oldworld.groups.integrations.lazy"),
+    lsp = require("oldworld.groups.integrations.lsp"),
+    markdown = require("oldworld.groups.integrations.markdown"),
+    mason = require("oldworld.groups.integrations.mason"),
+    navic = require("oldworld.groups.integrations.navic"),
+    neo_tree = require("oldworld.groups.integrations.neo_tree"),
+    neorg = require("oldworld.groups.integrations.neorg"),
+    noice = require("oldworld.groups.integrations.noice"),
+    notify = require("oldworld.groups.integrations.notify"),
+    rainbow_delimiters = require("oldworld.groups.integrations.rainbow_delimiters"),
+    telescope = require("oldworld.groups.integrations.telescope"),
+    treesitter = require("oldworld.groups.integrations.treesitter"),
 }
 local integrations = {}
 
 for integration, enabled in pairs(config.integrations) do
     if enabled then
-        local highlights = groups_highlights[integration]
+        local highlights = integrations_highlights[integration]
         table.insert(integrations, { enabled = true, highlights = highlights })
     end
 end
@@ -40,7 +41,8 @@ local function load_highlights(highlights)
 end
 
 function M.setup()
-    load_highlights(defaults_highlights)
+    load_highlights(editor_highlights)
+    load_highlights(syntax_highlights)
     for _, plugin in ipairs(integrations) do
         if plugin.enabled then
             load_highlights(plugin.highlights)
