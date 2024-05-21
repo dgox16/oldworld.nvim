@@ -13,7 +13,7 @@ return {
     ["@boolean"] = { fg = p.yellow } + styles.booleans,
     ["@constructor"] = { fg = p.subtext1 },
     ["@constant.builtin"] = { fg = p.yellow },
-    ["@keyword.function"] = { fg = p.red } + styles.functions,
+    ["@keyword.function"] = { fg = p.fg } + styles.functions,
     ["@namespace"] = { fg = p.red, italic = true },
     ["@parameter"] = { fg = p.magenta },
     ["@property"] = { fg = p.fg },

@@ -6,8 +6,6 @@ Why not simply fork it? I've thought about it carefully, but my idea with the th
 
 ## 📷 Preview
 
-![image](https://github.com/dgox16/oldworld.nvim/assets/90411765/bcdca460-eb00-487a-b210-01bb09421048)
-
 ![image](https://github.com/dgox16/oldworld.nvim/assets/90411765/365be514-8a05-48ef-b879-95531d7677d4)
 
 ## 📦 Installation

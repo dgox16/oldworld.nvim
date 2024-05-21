@@ -14,7 +14,6 @@ local palette = {
     magenta = "#e29eca",
     orange = "#f5a191",
     blue = "#92a2d5",
-    lavender = "#a4a6c9",
     cyan = "#85b5ba",
     bright_black = "#353539",
     bright_red = "#f591b2",
