@@ -10,10 +10,10 @@ local styles = vim.tbl_map(function(value)
 end, config.styles)
 
 return {
-    ["@boolean"] = { fg = p.yellow } + styles.booleans,
+    ["@boolean"] = { fg = p.orange } + styles.booleans,
     ["@constructor"] = { fg = p.subtext1 },
     ["@constant.builtin"] = { fg = p.yellow },
-    ["@keyword.function"] = { fg = p.fg } + styles.functions,
+    ["@keyword.function"] = { fg = p.purple } + styles.functions,
     ["@namespace"] = { fg = p.red, italic = true },
     ["@parameter"] = { fg = p.magenta },
     ["@property"] = { fg = p.fg },
@@ -34,12 +34,10 @@ return {
     ["@variable.parameter"] = { fg = p.magenta } + styles.variables,
     ["@constructor.javascript"] = { fg = p.red },
     ["@keyword.clojure"] = { fg = p.bright_red } + styles.keywords,
-
     ["@text.underline"] = { link = "Underlined" },
     ["@text.strong"] = { bold = true },
     ["@text.strikethrough"] = { strikethrough = true },
     ["@text.italic"] = { italic = true },
-
     ["@markup.heading"] = { fg = p.fg, bold = true },
     ["@markup.heading.1"] = { fg = p.blue, bold = true },
     ["@markup.heading.1.marker"] = { link = "@comment" },
