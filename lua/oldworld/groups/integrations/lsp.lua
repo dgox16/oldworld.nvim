@@ -21,6 +21,8 @@ return {
     ["@lsp.type.typeAlias"] = { link = "@type.definition" },
     ["@lsp.type.unresolvedReference"] = { undercurl = true, sp = p.error },
     ["@lsp.mod.readonly"] = { link = "@constant" },
+    ["@lsp.typemod.function.readonly"] = { fg = p.blue },
+    ["@lsp.typemod.variable.declaration"] = { fg = p.red },
     ["@lsp.typemod.class.defaultLibrary"] = { link = "@type.builtin" },
     ["@lsp.typemod.enum.defaultLibrary"] = { link = "@type.builtin" },
     ["@lsp.typemod.enumMember.defaultLibrary"] = { link = "@constant.builtin" },
