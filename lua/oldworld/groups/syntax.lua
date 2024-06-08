@@ -10,7 +10,7 @@ local styles = vim.tbl_map(function(value)
 end, config.styles)
 
 return {
-    Comment = { fg = p.subtext4 } + styles.comments, -- any comment
+    Comment = { fg = p.subtext3 } + styles.comments, -- any comment
     Constant = { fg = p.red }, -- any constant
     String = { fg = p.green }, -- a string constant: "this is a string"
     Character = { fg = p.green }, -- a character constant: 'p', '\n'
