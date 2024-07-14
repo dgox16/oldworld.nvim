@@ -63,6 +63,7 @@ local default_config = {
         telescope = true,
         treesitter = true,
     },
+    highlight_overrides = {}
 }
 ```
 
@@ -77,6 +78,9 @@ require("oldworld").setup({
         hop = true,
         telescope = false,
     },
+    highlight_overrides = {
+        Comment = { bg = "#ff0000" }
+    }
 })
 ```
 
@@ -86,4 +90,4 @@ It's my first theme and my first Neovim plugin. I know in advance that there wil
 
 ## 🎙️ Acknowledgements
 
--   [mellow.nvim](https://github.com/mellow-theme/mellow.nvim) used its amazing color palette and styles as a base.
+- [mellow.nvim](https://github.com/mellow-theme/mellow.nvim) used its amazing color palette and styles as a base.
