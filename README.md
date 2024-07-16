@@ -90,4 +90,4 @@ It's my first theme and my first Neovim plugin. I know in advance that there wil
 
 ## 🎙️ Acknowledgements
 
-- [mellow.nvim](https://github.com/mellow-theme/mellow.nvim) used its amazing color palette and styles as a base.
+-   [mellow.nvim](https://github.com/mellow-theme/mellow.nvim) used its amazing color palette and styles as a base.
