@@ -6,7 +6,12 @@ Why not simply fork it? I've thought about it carefully, but my idea with the th
 
 ## 📷 Preview
 
-![image](https://github.com/dgox16/oldworld.nvim/assets/90411765/365be514-8a05-48ef-b879-95531d7677d4)
+![Oldworld.nvim](https://github.com/user-attachments/assets/bb0c211d-4488-44bf-ace4-c695642177e4)
+
+## 🎨 Pallete
+
+![Pallete](https://github.com/user-attachments/assets/f6578495-cc22-43aa-a49c-5c9396360657)
+
 
 ## 📦 Installation
 
