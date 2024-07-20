@@ -44,7 +44,7 @@ return {
     Error = { fg = p.orange }, -- any erroneous construct
     Todo = { fg = p.yellow }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
     -- HTML
-    htmlArg = { fg = p.bright_purple, italic = true }, -- attributes
+    htmlArg = { fg = p.fg, italic = true }, -- attributes
     htmlEndTag = { fg = p.subtext1 }, -- end tag />
     htmlTitle = { fg = p.fg }, -- title tag text
     htmlTag = { fg = p.subtext1 }, -- tag delimiters
@@ -52,9 +52,9 @@ return {
     htmlTagName = { fg = p.red }, -- tag text
 
     -- Diff
-    diffAdded = { fg = p.bright_green },
-    diffRemoved = { fg = p.bright_orange },
-    diffChanged = { fg = p.bright_yellow },
+    diffAdded = { fg = p.green },
+    diffRemoved = { fg = p.red },
+    diffChanged = { fg = p.yellow },
     diffOldFile = { fg = p.gray4 },
     diffNewFile = { fg = p.fg },
     diffFile = { fg = p.subtext4 },

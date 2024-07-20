@@ -26,7 +26,7 @@ return {
     ["@string.escape"] = { fg = p.magenta },
     ["@symbol"] = { fg = p.yellow },
     ["@tag"] = { fg = p.red },
-    ["@tag.attribute"] = { fg = p.bright_purple, italic = true },
+    ["@tag.attribute"] = { fg = p.cyan, italic = true },
     ["@tag.delimiter"] = { fg = p.subtext1 },
     ["@type.builtin"] = { fg = p.magenta },
     ["@variable"] = { fg = p.fg } + styles.variables,
