@@ -10,7 +10,7 @@ Why not simply fork it? I've thought about it carefully, but my idea with the th
 
 ## 🎨 Pallete
 
-![Pallete](https://github.com/user-attachments/assets/f6578495-cc22-43aa-a49c-5c9396360657)
+![oldworld (1)](https://github.com/user-attachments/assets/0e0db774-92ac-4cda-93b4-9c3cd38a68c2)
 
 
 ## 📦 Installation
