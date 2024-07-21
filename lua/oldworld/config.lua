@@ -30,6 +30,7 @@ local default_config = {
         rainbow_delimiters = true,
         telescope = true,
         treesitter = true,
+        illuminate = true,
     },
     highlight_overrides = {},
 }
