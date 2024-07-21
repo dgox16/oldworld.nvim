@@ -1,0 +1,26 @@
+{
+  "name": "oldworld",
+
+  "cursorColor": "#c9c7cd",
+  "foreground": "#c9c7cd",
+  "background": "#161617",
+  "selectionBackground": "#3C3B3E",
+
+  "black": "#27272a",
+  "blue": "#9ca2cf",
+  "cyan": "#85b8ba",
+  "green": "#90b99f",
+  "purple": "#e29eca",
+  "red": "#ea83a5",
+  "white": "#c9c7cd",
+  "yellow": "#e6b99d",
+
+  "brightBlack": "#353539",
+  "brightBlue": "#acb1d7",
+  "brightCyan": "#97c0c4",
+  "brightGreen": "#a7c8b3",
+  "brightPurple": "#e8b0d4",
+  "brightRed": "#ed96b3",
+  "brightWhite": "#c9c7cd",
+  "brightYellow": "#eac5ac"
+}
