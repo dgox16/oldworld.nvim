@@ -19,7 +19,7 @@ return {
     ["@property"] = { fg = p.fg },
     ["@punctuation"] = { fg = p.subtext1 },
     ["@punctuation.delimiter"] = { fg = p.subtext1 },
-    ["@punctuation.bracket"] = { fg = p.subtext1 },
+    ["@punctuation.bracket"] = { fg = p.subtext2 },
     ["@punctuation.special"] = { fg = p.subtext1 },
     ["@string.documentation"] = { fg = p.green } + styles.comments,
     ["@string.regex"] = { fg = p.purple },
