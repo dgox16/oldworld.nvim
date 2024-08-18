@@ -11,7 +11,7 @@ end, config.styles)
 
 return {
     ["@boolean"] = { fg = p.orange } + styles.booleans,
-    ["@constructor"] = { fg = p.subtext1 },
+    ["@constructor"] = { fg = p.subtext3 },
     ["@constant.builtin"] = { fg = p.yellow },
     ["@keyword.function"] = { fg = p.purple } + styles.functions,
     ["@namespace"] = { fg = p.red, italic = true },
@@ -19,7 +19,7 @@ return {
     ["@property"] = { fg = p.fg },
     ["@punctuation"] = { fg = p.subtext1 },
     ["@punctuation.delimiter"] = { fg = p.subtext1 },
-    ["@punctuation.bracket"] = { fg = p.subtext2 },
+    ["@punctuation.bracket"] = { fg = p.subtext3 },
     ["@punctuation.special"] = { fg = p.subtext1 },
     ["@string.documentation"] = { fg = p.green } + styles.comments,
     ["@string.regex"] = { fg = p.purple },
