@@ -7,6 +7,7 @@ local M = {}
 
 local integrations_highlights = {
     alpha = require("oldworld.groups.integrations.alpha"),
+    blink = require("oldworld.groups.integrations.blink"),
     cmp = require("oldworld.groups.integrations.cmp"),
     flash = require("oldworld.groups.integrations.flash"),
     gitsigns = require("oldworld.groups.integrations.gitsigns"),
@@ -23,6 +24,7 @@ local integrations_highlights = {
     noice = require("oldworld.groups.integrations.noice"),
     notify = require("oldworld.groups.integrations.notify"),
     rainbow_delimiters = require("oldworld.groups.integrations.rainbow_delimiters"),
+    snacks = require("oldworld.groups.integrations.snacks"),
     telescope = require("oldworld.groups.integrations.telescope"),
     treesitter = require("oldworld.groups.integrations.treesitter"),
     illuminate = require("oldworld.groups.integrations.illuminate"),
