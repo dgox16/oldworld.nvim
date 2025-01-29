@@ -8,11 +8,9 @@ Why not simply fork it? I've thought about it carefully, but my idea with the th
 
 ![image](https://github.com/user-attachments/assets/e271381e-94ca-43dd-8e59-0d7cc33ff0bd)
 
-
 ## 🎨 Pallete
 
 ![oldworld (1)](https://github.com/user-attachments/assets/0e0db774-92ac-4cda-93b4-9c3cd38a68c2)
-
 
 ## 📦 Installation
 
@@ -41,6 +39,7 @@ The theme will use the default values unless you change the default configuratio
 ```lua
 local default_config = {
     terminal_colors = true, -- enable terminal colors
+    variants = "default", -- Two variants availables: default and cooler
     styles = { -- You can pass the style using the format: style = true
         comments = {}, -- style for comments
         keywords = {}, -- style for keywords
@@ -96,4 +95,4 @@ It's my first theme and my first Neovim plugin. I know in advance that there wil
 
 ## 🎙️ Acknowledgements
 
--   [mellow.nvim](https://github.com/mellow-theme/mellow.nvim) used its amazing color palette and styles as a base.
+- [mellow.nvim](https://github.com/mellow-theme/mellow.nvim) used its amazing color palette and styles as a base.

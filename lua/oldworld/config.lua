@@ -2,6 +2,7 @@ local config = {}
 
 local default_config = {
     terminal_colors = true,
+    variants = "default",
     styles = {
         comments = {},
         keywords = {},
