@@ -39,7 +39,7 @@ The theme will use the default values unless you change the default configuratio
 ```lua
 local default_config = {
     terminal_colors = true, -- enable terminal colors
-    variant = "default", -- Two variants availables: default and cooler
+    variant = "default", -- default, oled, cooler
     styles = { -- You can pass the style using the format: style = true
         comments = {}, -- style for comments
         keywords = {}, -- style for keywords
