@@ -26,6 +26,7 @@ local default_config = {
         mini = true,
         navic = true,
         neo_tree = true,
+        neogit = true,
         neorg = true,
         noice = true,
         notify = true,

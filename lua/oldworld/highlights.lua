@@ -20,6 +20,7 @@ local integrations_highlights = {
     mini = require("oldworld.groups.integrations.mini"),
     navic = require("oldworld.groups.integrations.navic"),
     neo_tree = require("oldworld.groups.integrations.neo_tree"),
+    neogit = require("oldworld.groups.integrations.neogit"),
     neorg = require("oldworld.groups.integrations.neorg"),
     noice = require("oldworld.groups.integrations.noice"),
     notify = require("oldworld.groups.integrations.notify"),
