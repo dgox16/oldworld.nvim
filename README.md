@@ -62,6 +62,7 @@ local default_config = {
         mason = true,
         navic = false,
         neo_tree = false,
+        neogit = false,
         neorg = false,
         noice = true,
         notify = true,
