@@ -27,6 +27,7 @@ local palettes = {
         bright_cyan = "#97c0c4",
         dark_green = "#38464e",
         dark_orange = "#514151",
+        dark_blue = "#3e3f4f",
         gray0 = "#18181a",
         gray1 = "#1b1b1c",
         gray2 = "#2a2a2c",

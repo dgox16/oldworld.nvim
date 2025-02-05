@@ -11,4 +11,10 @@ return {
 
     NeogitDiffContextHighlight = { bg = palette.gray2 },
     NeogitDiffContext = { bg = palette.bg },
+
+    NeogitHunkHeaderHighlight = { bg = palette.gray4, fg = palette.fg },
+    NeogitHunkHeader = { bg = palette.gray2, fg = palette.fg },
+    NeogitHunkHeaderCursor = { bg = palette.gray4, fg = palette.fg },
+
+    NeogitCommitViewHeader = { bg = palette.dark_blue, fg = palette.blue },
 }
