@@ -1,13 +1,17 @@
 local palette = require("oldworld.palette")
 
-return {
-    NeogitDiffDeleteHighlight = { bg = palette.dark_orange, fg = palette.bright_orange },
-    NeogitDiffDelete = { bg = palette.dark_orange, fg = palette.orange },
-    NeogitDiffDeleteCursor = { bg = palette.bright_orange, fg = palette.dark_orange },
+local u = require("oldworld.utils.color_utils")
 
-    NeogitDiffAddHighlight = { bg = palette.dark_green, fg = palette.bright_green },
-    NeogitDiffAdd = { bg = palette.dark_green, fg = palette.green },
-    NeogitDiffAddCursor = { bg = palette.bright_green, fg = palette.dark_green },
+local DARKEN_AMOUNT = 0.20
+
+return {
+    NeogitDiffDeleteHighlight = { bg = u.darken(palette.orange, DARKEN_AMOUNT, palette.bg), fg = palette.orange },
+    NeogitDiffDelete = { bg = u.darken(palette.orange, DARKEN_AMOUNT, palette.bg), fg = palette.orange },
+    NeogitDiffDeleteCursor = { bg = palette.orange, fg = u.darken(palette.orange, DARKEN_AMOUNT, palette.bg) },
+
+    NeogitDiffAddHighlight = { bg = u.darken(palette.green, DARKEN_AMOUNT, palette.bg), fg = palette.green },
+    NeogitDiffAdd = { bg = u.darken(palette.green, DARKEN_AMOUNT, palette.bg), fg = palette.green },
+    NeogitDiffAddCursor = { bg = palette.green, fg = u.darken(palette.green, DARKEN_AMOUNT, palette.bg) },
 
     NeogitDiffContextHighlight = { bg = palette.gray2 },
     NeogitDiffContext = { bg = palette.bg },
@@ -16,5 +20,5 @@ return {
     NeogitHunkHeader = { bg = palette.gray2, fg = palette.fg },
     NeogitHunkHeaderCursor = { bg = palette.gray4, fg = palette.fg },
 
-    NeogitCommitViewHeader = { bg = palette.dark_blue, fg = palette.blue },
+    NeogitCommitViewHeader = { bg = u.darken(palette.blue, DARKEN_AMOUNT, palette.bg), fg = palette.blue },
 }
