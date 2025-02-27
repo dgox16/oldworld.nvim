@@ -31,6 +31,7 @@ local default_config = {
         noice = true,
         notify = true,
         rainbow_delimiters = true,
+        render_markdown = true,
         snacks = true,
         telescope = true,
         treesitter = true,
