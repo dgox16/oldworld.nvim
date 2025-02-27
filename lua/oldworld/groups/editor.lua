@@ -21,7 +21,7 @@ return {
     SignColumn = { bg = p.bg, fg = p.subtext4 }, -- column where signs are displayed
     IncSearch = { fg = p.black, bg = p.yellow }, -- 'incsearch' highlighting; also used for the text replaced with ":s///p"
     CurSearch = { fg = p.black, bg = p.yellow }, -- 'cursearch' highlighting; also used for the text replaced with ":s///p"
-    LineNr = { fg = p.gray4 }, -- Line number for " =number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+    LineNr = { fg = p.gray5 }, -- Line number for " =number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     CursorLineNr = { fg = p.subtext1 }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     MatchParen = { fg = p.yellow, underline = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match.
     ModeMsg = { fg = p.gray3, bold = true }, --' showmode' message (e.g., "-- INSERT --")

@@ -8,7 +8,6 @@ Why not simply fork it? I've thought about it carefully, but my idea with the th
 
 ![preview_default](https://github.com/user-attachments/assets/b2e64ab8-2559-49d4-ad7c-917344c669f2)
 
-
 ## 🎨 Pallete
 
 ![oldworld (1)](https://github.com/user-attachments/assets/0e0db774-92ac-4cda-93b4-9c3cd38a68c2)
