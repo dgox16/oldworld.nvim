@@ -1,4 +1,5 @@
 local p = require("oldworld.palette")
+local u = require("oldworld.utils.color_utils")
 local config = require("oldworld.config")
 
 local styles = vim.tbl_map(function(value)
@@ -24,7 +25,7 @@ return {
     ["@string.documentation"] = { fg = p.green } + styles.comments,
     ["@string.regex"] = { fg = p.purple },
     ["@string.escape"] = { fg = p.magenta },
-    ["@string.special.url"] = { fg = p.bright_green, underline = true },
+    ["@string.special.url"] = { fg = u.lighten(p.green, 0.5, p.fg), underline = true },
     ["@symbol"] = { fg = p.yellow },
     ["@tag"] = { fg = p.red },
     ["@tag.attribute"] = { fg = p.cyan, italic = true },
@@ -34,7 +35,7 @@ return {
     ["@variable.builtin"] = { fg = p.purple } + styles.variables,
     ["@variable.parameter"] = { fg = p.parameter } + styles.variables,
     ["@constructor.javascript"] = { fg = p.red },
-    ["@keyword.clojure"] = { fg = p.bright_red } + styles.keywords,
+    ["@keyword.clojure"] = { fg = u.lighten(p.red, 0.5, p.fg) } + styles.keywords,
     ["@keyword.import"] = { fg = p.red } + styles.keywords,
     ["@text.underline"] = { link = "Underlined" },
     ["@text.strong"] = { bold = true },

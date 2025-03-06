@@ -1,4 +1,5 @@
 local p = require("oldworld.palette")
+local u = require("oldworld.utils.color_utils")
 
 return {
     -- LSP Semantic Token Groups
@@ -24,7 +25,7 @@ return {
     ["@lsp.mod.readonly"] = { link = "@constant" },
     ["@lsp.typemod.function.readonly"] = { fg = p.blue },
     ["@lsp.typemod.variable.declaration"] = { fg = p.fg },
-    ["@lsp.typemod.property"] = { fg = p.bright_blue },
+    ["@lsp.typemod.property"] = { fg = u.lighten(p.blue, 0.5, p.fg) },
     ["@lsp.typemod.class.defaultLibrary"] = { link = "@type.builtin" },
     ["@lsp.typemod.enum.defaultLibrary"] = { link = "@type.builtin" },
     ["@lsp.typemod.enumMember.defaultLibrary"] = { link = "@constant.builtin" },

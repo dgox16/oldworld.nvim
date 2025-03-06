@@ -1,4 +1,5 @@
 local p = require("oldworld.palette")
+local u = require("oldworld.utils.color_utils")
 
 return {
     ColorColumn = { bg = p.gray1 }, -- used for the columns set with 'colorcolumn'
@@ -25,7 +26,7 @@ return {
     CursorLineNr = { fg = p.subtext1 }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     MatchParen = { fg = p.yellow, underline = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match.
     ModeMsg = { fg = p.gray3, bold = true }, --' showmode' message (e.g., "-- INSERT --")
-    MoreMsg = { fg = p.bright_magenta }, -- more-prompt
+    MoreMsg = { fg = u.lighten(p.magenta, 0.5, p.fg) }, -- more-prompt
     NonText = { fg = p.subtext4 }, --'~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., > displayed when a double-wide character doesn't fit at the end of the line).
     Normal = { fg = p.fg, bg = p.bg }, -- normal text
     NormalNC = { fg = p.fg, bg = p.bg_dark }, -- normal text
@@ -37,8 +38,8 @@ return {
     PmenuThumb = { bg = p.gray3 }, -- Popup menu: Thumb of the scrollbar.
     Question = { fg = p.purple }, -- hit-enter prompt and yes/no questions
     QuickFixLine = { fg = p.red, bg = p.gray2 }, -- Current quickfix item in the quickfix window.
-    Search = { fg = p.bright_yellow, bg = p.black }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
-    SpecialKey = { fg = p.special_grey }, -- Meta and special keys listed with  =map, also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is.
+    Search = { fg = u.lighten(p.yellow, 0.5, p.fg), bg = p.black }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+    SpecialKey = { fg = p.subtext2 }, -- Meta and special keys listed with  =map, also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is.
     SpellBad = { fg = p.orange, underline = true }, -- Word that is not recognized by the spellchecker. This will be combined with the highlighting used otherwise.
     SpellCap = { fg = p.yellow }, -- Word that should start with a capital. This will be combined with the highlighting used otherwise.
     SpellLocal = { fg = p.yellow }, -- Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.

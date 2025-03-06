@@ -1,4 +1,5 @@
 local p = require("oldworld.palette")
+local u = require("oldworld.utils.color_utils")
 
 return {
     SnacksIndent = { fg = p.gray3 },
@@ -8,5 +9,5 @@ return {
     SnacksDashboardKey = { fg = p.magenta, bold = true },
     SnacksDashboardIcon = { fg = p.subtext1 },
     SnacksDashboardFooter = { fg = p.purple, italic = true },
-    SnacksDashboardSpecial = { fg = p.bright_purple, bold = true, italic = true },
+    SnacksDashboardSpecial = { fg = u.lighten(p.purple, 0.5, p.fg), bold = true, italic = true },
 }

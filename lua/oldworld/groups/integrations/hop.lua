@@ -1,10 +1,10 @@
 local p = require("oldworld.palette")
 
 return {
-    HopNextKey = { fg = p.bright_yellow },
-    HopNextKey1 = { fg = p.bright_purple },
-    HopNextKey2 = { fg = p.bright_red },
+    HopNextKey = { fg = p.yellow },
+    HopNextKey1 = { fg = p.purple },
+    HopNextKey2 = { fg = p.red },
     HopUnmatched = { fg = p.gray4 },
-    HopCursor = { fg = p.bright_red },
-    HopPreview = { fg = p.bright_purple },
+    HopCursor = { fg = p.red },
+    HopPreview = { fg = p.purple },
 }
