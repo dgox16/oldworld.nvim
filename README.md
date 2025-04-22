@@ -1,4 +1,12 @@
-# OldWorld.nvim
+<h1 align="center">
+	OldWorld for <a href="https://github.com/neovim/neovim">Neovim</a>
+</h1>
+
+<p align="center">
+	<a href="https://github.com/dgox16/oldworld.nvim/stargazers"><img src="https://img.shields.io/github/stars/dgox16/oldworld.nvim?style=for-the-badge&colorA=161617&colorB=e6b99d"></a>
+	<a href="https://github.com/dgox16/oldworld.nvim/issues"><img src="https://img.shields.io/github/issues/dgox16/oldworld.nvim?style=for-the-badge&colorA=161617&colorB=ea83a5"></a>
+	<a href="https://github.com/dgox16/oldworld.nvim/contributors"><img src="https://img.shields.io/github/contributors/dgox16/oldworld.nvim?style=for-the-badge&colorA=161617&colorB=92a2d5"></a>
+</p>
 
 After a long time using themes with bright and saturated colors, I've decided to give my eyes a more relaxing view. OldWorld is a theme heavily based on [mellow.nvim](https://github.com/mellow-theme/mellow.nvim) but adding new colors and new integrations with different plugins.
 
