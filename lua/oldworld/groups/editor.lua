@@ -1,6 +1,8 @@
 local p = require("oldworld.palette")
 local u = require("oldworld.utils.color_utils")
 
+local DARKEN_AMOUNT = 0.20
+
 return {
     ColorColumn = { bg = p.gray1 }, -- used for the columns set with 'colorcolumn'
     Conceal = { fg = p.gray1 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
@@ -9,10 +11,10 @@ return {
     CursorIM = { fg = p.black, bg = p.fg }, -- the character under the cursor
     CursorLine = { bg = p.gray1 }, -- the screen line that the cursor is in when 'cursorline' is set
     Directory = { fg = p.purple }, -- directory names (and other special names in listings)
-    DiffAdd = { bg = p.green, fg = p.black }, -- diff mode: Added line
-    DiffChange = { fg = p.yellow, underline = true }, -- diff mode: Changed line
-    DiffDelete = { bg = p.orange, fg = p.black }, -- diff mode: Deleted line
-    DiffText = { bg = p.yellow, fg = p.black }, -- diff mode: Changed text within a changed line
+    DiffAdd = { bg = u.darken(p.green, DARKEN_AMOUNT, p.bg), fg = p.green }, -- diff mode: Added line
+    DiffChange = { bg = u.darken(p.orange, DARKEN_AMOUNT, p.bg), fg = p.orange }, -- diff mode: Changed line
+    DiffDelete = { bg = u.darken(p.red, DARKEN_AMOUNT, p.bg), fg = p.red }, -- diff mode: Deleted line
+    DiffText = { bg = p.orange, fg = u.darken(p.orange, DARKEN_AMOUNT, p.bg) }, -- diff mode: Changed text within a changed line
     EndOfBuffer = { fg = p.bg },
     ErrorMsg = { fg = p.orange }, -- error messages on the command line
     VertSplit = { fg = p.gray2 }, -- the column separating vertically split windows
