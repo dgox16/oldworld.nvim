@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c386a22c-e16e-4a7b-9312-61c4b52b7fd2" width="200" >
+</p>
+
 <h1 align="center">
 	OldWorld for <a href="https://github.com/neovim/neovim">Neovim</a>
 </h1>
